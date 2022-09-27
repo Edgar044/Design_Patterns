@@ -4,36 +4,50 @@
 class SymbolTable
 {
 protected:
-    static SymbolTable* symbol_table;
-    
-	
-	std::string _name;
-	int _data; 
-    //int size = 0;
+	static SymbolTable* symbol_table;
+	  
+
+	std::vector <std::string> _name;
+	std::vector <int> _data;
+	 
 
 public:
 
-void operator=(const SymbolTable &) = delete; //delete Assignment
-SymbolTable (SymbolTable &other) = delete;// delete copy constructor
+	void operator=(const SymbolTable&) = delete; //delete Assignment
+	SymbolTable(SymbolTable& other) = delete;// delete copy constructor
+	~SymbolTable() = default;
 
-//function getInstance for initilization object
-static SymbolTable* getInstance(const std::string &name, const int &data ){
-	if(symbol_table == NULL){
-		symbol_table  = new SymbolTable(name, data);
+	 
+	
+	static SymbolTable* getInstance() {
+		
+		if (symbol_table == NULL) {
+			symbol_table = new SymbolTable();
+		} 
+
+		return symbol_table;
 	}
 
-	return symbol_table;
+	void add(std::string name, int data) {
 
-}
+		_name.push_back(name);
+		_data.push_back(data);
+		//++size;
 
-void printData(){
-	std::cout << _name << ", " << _data << "\n";
-}
+
+	}
+
+	void printData() {
+		for (size_t i = 0; i < _data.size(); ++i) {
+			std::cout <<_name[i] << " = " << _data[i] << "\n";
+		}
+		
+	} 
 
 protected:
-SymbolTable(const std::string &name, const int &data){
-		_name  = name;
-		_data  = data;
-
-	}
+	SymbolTable() = default;
+  
 };
+ 
+
+SymbolTable* SymbolTable::symbol_table = nullptr;
