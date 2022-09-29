@@ -4,9 +4,9 @@
 
 
 void foo() {
-	SymbolTable* a = SymbolTable::getInstance();
-	a->add("lastVariable", 9999);
-	a->printData();
+	SymbolTable* ST = SymbolTable::getInstance();
+	ST->add("lastVariable", 9999);
+	ST->printData();
 }
 
 
@@ -14,13 +14,13 @@ void foo() {
 
 int main(){
     
-	SymbolTable* a = SymbolTable::getInstance();
+	SymbolTable* ST = SymbolTable::getInstance();
 	
-	a->add("a", 5);
-	a->add("t",0);
-	a->add("j", 8);
-	a->add("a", 78);
-	a->add("a",900);
+	ST->add("a", 5);
+	ST->add("b",0);
+	ST->add("c", 8);
+	ST->add("d", 78);
+	ST->add("e",900);
 	
 
 	foo();
