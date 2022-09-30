@@ -18,8 +18,7 @@ void client(Director &director)
 	director.BuilFullCar();
 
 	BMW *bmw_full = bmw -> Get_BMW();
-    bmw_full->show();
-
+    bmw_full->show(); 
 
 }
 
