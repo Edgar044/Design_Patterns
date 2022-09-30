@@ -1,19 +1,19 @@
  #include <iostream>
  #include <math.h>
 
-class RoundPeg 
+
+class RoundPeg
 {
-	public:
+public:
 	int radius;
-	//improvizaci
-	RoundPeg() = default ;
-	RoundPeg(int _radius) : radius(_radius){};
-    int getRadius() const {
+	//improvizaci default i hamar error er tali esi drel em dzvel a
+	RoundPeg() = default;
+	RoundPeg(int _radius) : radius(_radius) {};
+	int getRadius() const {
 		return radius;
 	}
 
 };
-
 
 class  RoundHole
 {
@@ -27,13 +27,9 @@ class  RoundHole
 
 	virtual bool fits(RoundPeg *peg){
 		return bool(this->getRadius() >= peg->getRadius());
-	}
-
-
+	} 
 
 };
-
-
 
 
 class SquarePeg 
@@ -47,7 +43,6 @@ class SquarePeg
 	}
 
 };
-
 
 
 class SquarePegAdapter : public RoundPeg 
