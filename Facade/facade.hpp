@@ -115,10 +115,6 @@ public:
 
 };
 
-
-
  
-
-
 
 #endif //!FACADE_HPP
