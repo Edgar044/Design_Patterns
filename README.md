@@ -1,9 +1,9 @@
 # Design_Patterns
 
 
-1. Singleton
-2. Builder
-3. Observer
+1. *Singleton*  
+2. _Builder_
+3. __Observer__
 4. Proxy
 5. Bridge
 6. Composite
