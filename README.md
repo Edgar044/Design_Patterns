@@ -5,15 +5,15 @@
 2. Builder
 3. Observer
 4. Proxy
-Bridge
-Composite
-Decorator
-Adapter
-Factory
-State
-Command
-Chain of Responsibility
-Visitor
+5. Bridge
+6. Composite
+7. Decorator
+8. Adapter
+9. Factory
+10. State
+11. Command
+12. Chain of Responsibility
+13. Visitor
 
  Design patterns are typical solutions to commonly occurring problems in software design. They are like pre-made blueprints that you can customize to solve a recurring design problem in your code.
  
