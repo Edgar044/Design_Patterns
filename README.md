@@ -1,10 +1,10 @@
 # Design_Patterns
 
 
--Singleton
--Builder
-Observer
-Proxy
+1. Singleton
+2. Builder
+3. Observer
+4. Proxy
 Bridge
 Composite
 Decorator
