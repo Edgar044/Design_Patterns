@@ -1,19 +1,19 @@
 # Design_Patterns
 
 
-1. *Singleton*  
-2. _Builder_
-3. __Observer__
-4. Proxy
-5. Bridge
-6. Composite
-7. Decorator
-8. Adapter
-9. Factory
-10. State
-11. Command
-12. Chain of Responsibility
-13. Visitor
+1. Singleton ***Done***
+2. Builder ***Done***
+3. Observer ***TO DO**
+4. Proxy ***TO DO**
+5. Bridge ***TO DO**
+6. Composite ***TO DO**
+7. Decorator ***TO DO**
+8. Adapter ***Done***
+9. Factory ***TO DO**
+10. State ***TO DO**
+11. Command ***TO DO**
+12. Facade ***Done***
+13. Visitor ***TO DO**
 
  Design patterns are typical solutions to commonly occurring problems in software design. They are like pre-made blueprints that you can customize to solve a recurring design problem in your code.
  
