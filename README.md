@@ -1,8 +1,8 @@
 # Design_Patterns
 
 
-***Singleton***
-Builder
+-Singleton
+-Builder
 Observer
 Proxy
 Bridge
